@@ -7,9 +7,9 @@
                         http://www.springframework.org/schema/context  
                         http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
-	<!-- <context:property-placeholder location="classpath:props/redis.properties" 
-		ignore-unresolvable="true" /> -->
-
+	<context:property-placeholder location="classpath:props/redis.properties" 
+		ignore-unresolvable="true" />
+<bean id="springContextHolder" class="com.acm.util.SpringContextHolder"></bean>
 	<!-- <bean id="sentinelConfig" class="org.springframework.data.redis.connection.RedisSentinelConfiguration"> 
 		<constructor-arg name="master" value="mymaster" /> <constructor-arg name="sentinelHostAndPorts"> 
 		<set> <value>127.0.0.1:26379</value> </set> </constructor-arg> </bean> <bean 

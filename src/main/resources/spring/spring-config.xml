@@ -25,6 +25,8 @@
 		</property>
 	</bean>
 	
+	<bean id="springContextHolder" class="com.acm.util.SpringContextHolder"></bean>
+	
 	<import resource="classpath:spring/spring-db.xml"/>
 	
 	<import resource="classpath:spring/spring-wechat.xml"/>
